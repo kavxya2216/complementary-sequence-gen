@@ -11,6 +11,7 @@ def complementary_seq_generator():
             """)
 
         dna_sequence = input("🐝Enter the DNA sequence in FASTA format:").upper()
+        dna_lenght = len(dna_sequence)
         dna_list = list(dna_sequence)
         complementary_seq = ""
         for nucleotide in dna_list:
@@ -27,6 +28,7 @@ def complementary_seq_generator():
 
         print(f"\n🔬Your original sequence was: {dna_sequence}")
         print(f"🧬The complementary sequence is: {complementary_seq}")
+        print(f"🐞Number of bases: {dna_lenght}")
         print("✨" * 10)
         restart = input("Do you want to insert another sequence? Enter Yes or No.").lower()
         if restart != "yes":
